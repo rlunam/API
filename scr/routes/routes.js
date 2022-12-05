@@ -1,5 +1,8 @@
 const {Router} = require('express');
-const {bienvenida, dbconection}  = require('../controllers/controllers');
+const {
+    bienvenida,
+    dbconection
+}  = require('../controllers/controllers');
 
 const router = Router();
 
