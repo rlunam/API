@@ -1,8 +1,8 @@
 const express=require('express');
 const nodemon=require('nodemon');
 const oracledb=require('oracledb');
-const morgan=require('morgan')
-
+const morgan=require('morgan');
+const cors=require('cors');
 
 const PORT = 5000;
 
@@ -10,7 +10,7 @@ const app=express();
 
 app.use(morgan('dev'));
 app.use(express.json())
-
+app.use(cors());
 
 
 //----------------------------------------------------------------------
